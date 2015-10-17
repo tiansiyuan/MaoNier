@@ -153,12 +153,9 @@
 		BB2BAC241BD1FA4E00DB0FD8 /* MaoNier */ = {
 			isa = PBXGroup;
 			children = (
+				BB2BAC801BD20BDB00DB0FD8 /* MaoNier */,
 				BB2BAC291BD1FA4E00DB0FD8 /* AppDelegate.h */,
 				BB2BAC2A1BD1FA4E00DB0FD8 /* AppDelegate.m */,
-				BB2BAC2C1BD1FA4E00DB0FD8 /* ViewController.h */,
-				BB2BAC2D1BD1FA4E00DB0FD8 /* ViewController.m */,
-				BB2BAC5C1BD2012800DB0FD8 /* Controllers */,
-				BB2BAC521BD1FD2500DB0FD8 /* Models */,
 				BB2BAC4B1BD1FCCC00DB0FD8 /* Views */,
 				BB2BAC5D1BD2013D00DB0FD8 /* Utils */,
 				BB2BAC2F1BD1FA4E00DB0FD8 /* Main.storyboard */,
@@ -224,6 +221,8 @@
 		BB2BAC5C1BD2012800DB0FD8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB2BAC2C1BD1FA4E00DB0FD8 /* ViewController.h */,
+				BB2BAC2D1BD1FA4E00DB0FD8 /* ViewController.m */,
 				BB2BAC791BD201DE00DB0FD8 /* DiscoveryViewController.h */,
 				BB2BAC7A1BD201DE00DB0FD8 /* DiscoveryViewController.m */,
 				BB2BAC641BD2018300DB0FD8 /* MessageViewController.h */,
@@ -259,6 +258,15 @@
 				BB2BAC6C1BD201B100DB0FD8 /* iconfont-weixin.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		BB2BAC801BD20BDB00DB0FD8 /* MaoNier */ = {
+			isa = PBXGroup;
+			children = (
+				BB2BAC521BD1FD2500DB0FD8 /* Models */,
+				BB2BAC5C1BD2012800DB0FD8 /* Controllers */,
+			);
+			name = MaoNier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
