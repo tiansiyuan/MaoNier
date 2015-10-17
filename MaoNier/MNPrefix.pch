@@ -1,0 +1,38 @@
+//
+//  MNPrefix.pch
+//  MaoNier
+//
+//  Created by dlut on 15/9/30.
+//  Copyright (c) 2015年 dlut. All rights reserved.
+//
+
+#ifndef MaoNier_MNPrefix_pch
+#define MaoNier_MNPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma the iphone version
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+#pragma urls
+#define ROOT_URL [NSString stringWithFormat:@"http://182.92.239.150/ysc/index.php"]
+#define PICS_ROOT_URL [NSString stringWithFormat:@"http://maoni.b0.upaiyun.com"]
+#define NEAR_MESSAGE_URL @"/message/near"
+#define HOT_MESSAGE_URL @"/message/near2"
+#define LIKE_URL @"/message/like"
+#define DISLIKE_URL @"/message/nlike"
+#define NEARMAP_URL @"/message/nearmap"
+#define REGIST_URL @"/hider/find2"
+#define REMARK_URL @"/remark/remarks"
+#define MD5_KEY @"ysc-hzj"
+#define MD5_TOKEN @"time"
+
+#endif
