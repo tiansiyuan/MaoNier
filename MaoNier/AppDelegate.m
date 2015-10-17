@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "DiscoveryViewController.h"
+#import "WebViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    DiscoveryViewController *viewControllerA = [[DiscoveryViewController alloc] init];
+    [viewControllerA.tabBarItem setTitle:@"发现"];
+    [viewControllerA .tabBarItem setImage:[UIImage imageNamed:@"home.png"]];
+    [viewControllerA.view setBackgroundColor:[UIColor orangeColor]];
+    UINavigationController *navigationControllerA = [[UINavigationController alloc] init];
+    [navigationControllerA pushViewController:viewControllerA animated:YES];
+    
+    ViewController *viewControllerB = [[ViewController alloc] init];
+    [viewControllerB.tabBarItem setTitle:@"聊天"];
+    [viewControllerB.tabBarItem setImage:[UIImage imageNamed:@"iconfont-weixin.png"]];
+    [viewControllerB.view setBackgroundColor:[UIColor orangeColor]];
+    UINavigationController *navigationControllerB = [[UINavigationController alloc] initWithRootViewController:viewControllerB];
+    
+    WebViewController *webViewController = [[WebViewController alloc] init];
+    [webViewController.tabBarItem setTitle:@"网页"];
+    [webViewController.tabBarItem setImage:[UIImage imageNamed:@"home.png"]];
+
+    NSArray *array = @[navigationControllerA, navigationControllerB, webViewController];
+    [tabBarController setViewControllers:array];
+    tabBarController.tabBar.tintColor = [UIColor colorWithRed:70 / 255. green:170 / 255. blue:0 alpha:1.0];
+    [self.window setRootViewController:tabBarController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

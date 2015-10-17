@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5787598-2793-469C-90F6-EFEABB797D8E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B6DE94A55A698C5CE4DAC97523D34545A3E9B066</key>
+		<string>https://github.com/nannanIT/MaoNier.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MaoNier.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B6DE94A55A698C5CE4DAC97523D34545A3E9B066</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nannanIT/MaoNier.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6DE94A55A698C5CE4DAC97523D34545A3E9B066</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6DE94A55A698C5CE4DAC97523D34545A3E9B066</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MaoNier</string>
+		</dict>
+	</array>
+</dict>
+</plist>

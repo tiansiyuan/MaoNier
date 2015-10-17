@@ -40,7 +40,6 @@
     [self.messages addObject:[[Message alloc] initWithID:123 content:@"hello aaaaaa hahhahahahha" lat:123 lng:123 nick:@"grace" sex:UserSexFemale token:@"" span:@"123mim" time:@"1h" location:@"beijing" remarks:123 likes:12 userID:12]];
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
-//    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
     if (self.type == MessageViewControllerTypeHot) {
         [self.tableView setFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -50,7 +49,6 @@
     }
     [self.tableView setHeader:[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)]];
     [self.tableView setFooter:[MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)]];
-//    [self.tableView setFooter:[MJRefreshAutoStateFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)]];
     
     self.manager = [AFHTTPRequestOperationManager manager];
     self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
@@ -173,9 +171,6 @@
         }
     }
     [cell layoutCellWithMessage:[self.messages objectAtIndex:indexPath.row]];
-    
-    // Configure the cell...
-    
     return cell;
 }
 

@@ -10,22 +10,18 @@
 
 #import "DiscoveryViewController.h"
 #import "ViewController.h"
-<<<<<<< HEAD
 #import "MessageViewController.h"
-=======
->>>>>>> c43caac8073dab5a4c79a708332d79309f91267b
 
 @interface DiscoveryViewController (){
     BOOL _rightClick;
 }
-<<<<<<< HEAD
+
 @property(nonatomic, strong) MessageViewController *nearViewController;
 @property(nonatomic, strong) MessageViewController *hotViewController;
 @property(nonatomic, assign) NSUInteger currentIndex;
 @property(nonatomic, assign) UITableViewController *currentTableViewController;
 @property(nonatomic, assign) BOOL isFirst;
-=======
->>>>>>> c43caac8073dab5a4c79a708332d79309f91267b
+
 @end
 
 @implementation DiscoveryViewController
@@ -40,16 +36,12 @@
     [self.navigationItem setRightBarButtonItem:rightbarBtnItem];
     
     UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:@[@"附近", @"热门"]];
-<<<<<<< HEAD
     [segmentControl addTarget:self action:@selector(segmentControlChange:) forControlEvents:UIControlEventValueChanged];
-=======
     [segmentControl addTarget:self action:@selector(leftBarClick) forControlEvents:UIControlEventValueChanged];
->>>>>>> c43caac8073dab5a4c79a708332d79309f91267b
     [segmentControl setSelectedSegmentIndex:0];
     [segmentControl setWidth:SEGMENTCONTROL_DEFAULT_WIDTH forSegmentAtIndex:0];
     [segmentControl setWidth:SEGMENTCONTROL_DEFAULT_WIDTH forSegmentAtIndex:1];
     [self.navigationItem setTitleView:segmentControl];
-<<<<<<< HEAD
     
     _rightClick = NO;
     
@@ -58,16 +50,13 @@
     [self.view addSubview:self.nearViewController.view];
     [self.nearViewController beginAppearanceTransition:YES animated:YES];
     self.isFirst = YES;
-=======
     _rightClick = NO;
->>>>>>> c43caac8073dab5a4c79a708332d79309f91267b
 }
 
 - (void)leftBarClick {
     NSLog(@"You clicked leftBarBtnItem!");
 }
 
-<<<<<<< HEAD
 - (MessageViewController *)hotViewController {
     if (nil == _hotViewController) {
         self.hotViewController = [[MessageViewController alloc] initWithType:MessageViewControllerTypeHot];
@@ -111,8 +100,6 @@
     }
 }
 
-=======
->>>>>>> c43caac8073dab5a4c79a708332d79309f91267b
 - (void)rightBarClick {
     ViewController *viewController = [[ViewController alloc] init];
     [viewController.view setBackgroundColor:[UIColor redColor]];

@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your projecs
+platform :ios, '7.0'
+pod "AFNetworking", "~> 2.0"
+pod "MJRefresh", "~> 2.4"
+pod "PINRemoteImage"
+target 'MaoNier' do
+
+end
+
+target 'MaoNierTests' do
+
+end
+

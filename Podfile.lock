@@ -1,0 +1,46 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FLAnimatedImage (1.0.8)
+  - MJRefresh (2.4.12)
+  - PINCache (2.1)
+  - PINRemoteImage (1.2.1):
+    - PINRemoteImage/FLAnimatedImage (= 1.2.1)
+  - PINRemoteImage/Core (1.2.1):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (1.2.1):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - MJRefresh (~> 2.4)
+  - PINRemoteImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  FLAnimatedImage: f9422f796135aff80d8c00b2afc48015bb746e24
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  PINCache: 0581b0a7578fc0bbc6c7a8b70b0615388bea064c
+  PINRemoteImage: 7560f0c975b0495d232e954342c5f49979335015
+
+COCOAPODS: 0.36.4
